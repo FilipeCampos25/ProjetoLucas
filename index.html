@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantoneiras Online - Qualidade e Variedade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">C</div>
+                    <h1>Cantoneiras Online</h1>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <nav class="nav-desktop">
+                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#produtos" class="nav-link">Produtos</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+
+                <!-- Menu Mobile -->
+                <div class="header-actions">
+                    <button class="menu-btn" id="menuBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav class="nav-mobile" id="navMobile">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#produtos" class="nav-link">Produtos</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Cantoneiras de Qualidade</h2>
+                <p>Soluções completas em cantoneiras para suas necessidades</p>
+                <button class="btn btn-primary" id="scrollBtn">Ver Produtos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Categories Section -->
+            <section class="categories-section">
+                <h3>Categorias</h3>
+                <div class="categories-grid" id="categoriesContainer">
+                    <button class="category-btn active" data-category="all">Todos</button>
+                    <button class="category-btn" data-category="Reforçadas">Reforçadas</button>
+                    <button class="category-btn" data-category="Alumínio">Alumínio</button>
+                    <button class="category-btn" data-category="Ferro">Ferro</button>
+                    <button class="category-btn" data-category="Pintura">Pintura</button>
+                    <button class="category-btn" data-category="Dobras">Dobras</button>
+                    <button class="category-btn" data-category="Escada">Escada</button>
+                </div>
+            </section>
+
+            <!-- Products Section -->
+            <section class="products-section" id="produtos">
+                <h3 id="productsTitle">Todos os Produtos</h3>
+                <div class="products-grid" id="productsContainer">
+                    <!-- Produtos serão inseridos aqui via JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contato">
+        <div class="container">
+            <h3>Entre em Contato</h3>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>Email</h4>
+                        <p>contato@gmail.com.br</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Telefone</h4>
+                        <p>(00) 0000-0000</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Horário de Atendimento</h4>
+                        <p>Segunda a Sexta: 8h às 18h</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre Nós</h4>
+                    <p>Somos especialistas em cantoneiras de qualidade para diversos tipos de aplicação.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="#">Cantoneiras Reforçadas</a></li>
+                        <li><a href="#">Cantoneiras de Alumínio</a></li>
+                        <li><a href="#">Cantoneiras de Ferro</a></li>
+                        <li><a href="#">Cantoneiras para Escada</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cantoneiras Online. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
